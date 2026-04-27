@@ -29,7 +29,7 @@ const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "React Context"],
     category: "Frontend",
     github: "https://github.com/peachy-naomi/my_portfolio",
-    live: "https://my-portfolio-tau.vercel.app",
+    live: "my-portfolio-mu-brown-51.vercel.app",
     status: "Completed",
     featured: true,
   },
