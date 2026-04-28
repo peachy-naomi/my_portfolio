@@ -164,7 +164,7 @@ export default function Projects() {
 
         {/* Header */}
         <div className="mb-12">
-          <p className="text-sm uppercase tracking-[0.2em] text-[var(--portfolio-primary-purple)] font-semibold mb-2">
+          <p className="text-sm mt-5 uppercase tracking-[0.2em] text-[var(--portfolio-primary-purple)] font-semibold mb-2">
             My Work
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--portfolio-text)] leading-tight">

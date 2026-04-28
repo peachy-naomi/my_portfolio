@@ -9,7 +9,7 @@ export default function Skills() {
 
       <main className="md:ml-64 md:mr-16 px-6 py-14 md:px-16">
         <div className="mb-12">
-          <p className="text-sm uppercase tracking-[0.2em] text-[var(--portfolio-primary-purple)] font-semibold mb-2">
+          <p className="text-sm mt-5 uppercase tracking-[0.2em] text-[var(--portfolio-primary-purple)] font-semibold mb-2">
             What I know
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-[var(--portfolio-text)] leading-tight">
