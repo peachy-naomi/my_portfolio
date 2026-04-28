@@ -44,7 +44,7 @@ export default function SkillSection() {
             Building scalable systems, APIs, and server-side applications.
           </p>
           <div className="flex flex-wrap gap-3">
-            {["Python", "REST APIs", "MySQL", "Git & GitHub", "Flask"].map((skill, index) => (
+            {["Python", "REST APIs", "MySQL", "PostgreSQL", "Supabase", "Git & GitHub", "Express"].map((skill, index) => (
               <span
                 key={index}
                 className="px-4 py-1 bg-white/20 rounded-full text-sm text-white backdrop-blur-sm hover:bg-white/30 transition"
