@@ -45,7 +45,7 @@ const projects: Project[] = [
     github: "https://github.com/peachy-naomi/mini-ecommerce-cart",
     live: "https://mini-ecommerce-cart-tau.vercel.app",
     status: "Completed",
-    featured: true,
+    featured: false,
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ const projects: Project[] = [
     github: "https://github.com/peachy-naomi/authentication_ui",
     live: "https://authentication-ui-pearl.vercel.app",
     status: "Completed",
-    featured: true,
+    featured: false,
   },
   {
     id: 4,
@@ -73,7 +73,7 @@ const projects: Project[] = [
     github: "https://github.com/peachy-naomi/authentication",
     live: " https://authentication-backend-knuy.onrender.com",
     status: "Completed",
-    featured: false,
+    featured: true,
   },
   {
     id: 5,
@@ -87,7 +87,7 @@ const projects: Project[] = [
     github: "https://github.com/peachy-naomi/Nigeria_Population_Analysis",
     live: "",
     status: "Completed",
-    featured: false,
+    featured: true,
   },
   {
     id: 6,
@@ -101,7 +101,7 @@ const projects: Project[] = [
     github: "https://github.com/peachy-naomi/builda",
     live: "https://builda-indol.vercel.app",
     status: "Completed",
-    featured: true,
+    featured: false,
 },
   {
     id: 7,

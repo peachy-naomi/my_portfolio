@@ -27,7 +27,7 @@ export default function Nav() {
         <button
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
-          className="w-9 h-9 flex items-center justify-center rounded-xl bg-[var(--portfolio-surface)] border border-[var(--portfolio-surface-soft)] text-[var(--portfolio-text)] hover:border-[var(--portfolio-primary-purple)] hover:text-[var(--portfolio-primary-purple)] transition-all duration-200"
+          className="w-9 h-9 flex items-center justify-center rounded-full bg-[var(--portfolio-surface)] border border-[var(--portfolio-surface-soft)] text-[var(--portfolio-text)] hover:border-[var(--portfolio-primary-purple)] hover:text-[var(--portfolio-primary-purple)] transition-all duration-200"
         >
           {isOpen ? <X size={18} /> : <Menu size={18} />}
         </button>

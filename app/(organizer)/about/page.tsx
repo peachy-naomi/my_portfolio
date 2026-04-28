@@ -9,7 +9,7 @@ export default function About() {
       
       <Nav />
 
-      <div className="md:pl-72 md:mr-12">
+      <div className="md:pl-72 md:mr-12 mt-4 md:mt-6">
         
         {/* HERO SECTION */}
         <section className="bg-[var(--portfolio-bg)] px-6 py-12 md:px-16 md:py-20 flex flex-col md:flex-row items-center gap-10 shadow-md rounded-b-2xl">

@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+ @custom-variant dark (&:is(.dark *)); 
 
 @theme inline{
     /* Light theme */
@@ -77,12 +77,12 @@
     --portfolio-text:#F5F5F5;
     --portfolio-text-muted: #A1A1AA;
 
-    --portfolio-primary-peach: #7C3AED;
+    --portfolio-primary-peach: #0F0F0F;
     --portfolio-surface:#1A1A1A;
     --portfolio-surface-soft: #262626;
 
-    --portfolio-hover-dark: #5B21B6;
-    --portfolio-hover-stronger: #4C1D95;
+    --portfolio-hover-dark: #0F0F0F;
+    --portfolio-hover-stronger: #0F0F0F;
 }
 
 body {
@@ -90,7 +90,7 @@ body {
   color: var(--portfolio-text);  
   font-family: var(--font-sans);
   min-height: 100vh;
-  transition: background-color 0.3s, color 0.3s;   
+  transition: background-color 0.3s, color 0.3s;    
 }
 
 :root {
