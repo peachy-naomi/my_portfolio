@@ -9,13 +9,13 @@ export default function About() {
       
       <Nav />
 
-      <div className="md:pl-72 md:mr-12 mt-4 md:mt-6">
+      <div className="md:pl-72 md:mr-12 ">
         
         {/* HERO SECTION */}
         <section className="bg-[var(--portfolio-bg)] px-6 py-12 md:px-16 md:py-20 flex flex-col md:flex-row items-center gap-10 shadow-md rounded-b-2xl">
           
           {/* TEXT */}
-          <div className="max-w-xl space-y-5 text-center md:text-left">
+          <div className="max-w-xl space-y-5 mt-6 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight">
               I'm Emmanuel Naomi
             </h1>
