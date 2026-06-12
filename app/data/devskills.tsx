@@ -129,3 +129,42 @@ export const toolSkills: Skill[] = [
     description: "Designing scalable systems — understanding APIs, databases, caching, and architecture patterns.",
   },
 ];
+
+// ── AI & Machine Learning ──────────────────────────
+export const aiSkills: Skill[] = [
+  {
+    name: "Scikit-Learn",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
+    description: "Supervised and unsupervised ML — Random Forest, K-Means clustering, model evaluation and preprocessing.",
+  },
+  {
+    name: "TensorFlow",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+    description: "Deep learning framework used to build and train Artificial Neural Networks with Keras.",
+  },
+  {
+    name: "Keras",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg",
+    description: "High-level neural network API — used to design Dense ANN architectures with ReLU and Softmax activations.",
+  },
+  {
+    name: "Pandas",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+    description: "Data manipulation and analysis — cleaning datasets, feature engineering and exploratory analysis.",
+  },
+  {
+    name: "NumPy",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+    description: "Numerical computing — array operations, broadcasting and linear algebra for ML pipelines.",
+  },
+  {
+    name: "Matplotlib",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg",
+    description: "Data visualization — plots, charts and graphs to communicate model results and findings.",
+  },
+  {
+    name: "Seaborn",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+    description: "Statistical data visualization built on Matplotlib — used for cluster analysis and feature distribution plots.",
+  },
+];

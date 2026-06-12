@@ -29,7 +29,7 @@ const projects: Project[] = [
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "React Context"],
     category: "Frontend",
     github: "https://github.com/peachy-naomi/my_portfolio",
-    live: "my-portfolio-mu-brown-51.vercel.app",
+    live: "https://my-portfolio-mu-brown-51.vercel.app",
     status: "Completed",
     featured: true,
   },
@@ -71,7 +71,7 @@ const projects: Project[] = [
     tags: ["Express.js", "PostgreSQL", "Node.js", "bcrypt", "REST API"],
     category: "Backend",
     github: "https://github.com/peachy-naomi/authentication",
-    live: " https://authentication-backend-knuy.onrender.com",
+    live: "https://authentication-backend-knuy.onrender.com",
     status: "Completed",
     featured: true,
   },
@@ -79,7 +79,7 @@ const projects: Project[] = [
     id: 5,
     title: "Data Analysis with Pandas",
     description:
-      "Exploratory data analysis project using Pandas and Matplotlib to clean, analyze and visualize a real dataset.",
+      "Exploratory data analysis project using Pandas and Matplotlib to clean, analyze and visualize a real Nigerian population dataset.",
     longDescription:
       "Used Python, Pandas and Matplotlib to perform exploratory data analysis on a real-world dataset. Cleaned and transformed raw data, identified trends, handled missing values, and produced visualizations to communicate findings clearly.",
     tags: ["Python", "Pandas", "Matplotlib", "Data Analysis"],
@@ -102,9 +102,51 @@ const projects: Project[] = [
     live: "https://builda-indol.vercel.app",
     status: "Completed",
     featured: false,
-},
+  },
   {
     id: 7,
+    title: "Student Attrition Early Warning System",
+    description:
+      "A supervised ML model that predicts student dropout vs graduation using Random Forest, achieving 77% accuracy.",
+    longDescription:
+      "High student dropout rates in Nigerian higher education are often driven by undetected socio-economic and academic pressures. Developed a Random Forest Classifier to predict student outcomes (Dropout vs. Graduate). Feature Importance analysis revealed that 2nd-semester performance and tuition fee status are the primary predictors of attrition. Achieved 77% accuracy, providing a data-driven tool for university administrators to identify at-risk students for early academic or financial intervention.",
+    tags: ["Python", "Scikit-Learn", "Pandas", "Matplotlib", "Random Forest"],
+    category: "AI / ML",
+    github: "https://github.com/peachy-naomi/Random_Forest",
+    live: "",
+    status: "Completed",
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "Nigerian Healthcare Accessibility Mapping",
+    description:
+      "An unsupervised ML model using K-Means Clustering to identify high-vulnerability healthcare zones across Nigerian communities.",
+    longDescription:
+      "Unequal distribution of medical resources leaves many rural communities isolated. Implemented K-Means Clustering to segment 50 Nigerian communities into three tiers based on distance to healthcare, population density and average income. Used the Elbow Method to determine optimal cluster count and StandardScaler for feature parity. Successfully identified a 'Priority 3' cluster of isolated rural areas — serving as a strategic blueprint for data-driven placement of new primary healthcare centres and mobile clinics.",
+    tags: ["Python", "Scikit-Learn", "K-Means", "Seaborn", "Preprocessing"],
+    category: "AI / ML",
+    github: "https://github.com/peachy-naomi/Nigerian-Healthcare-Accessibility-Clustering",
+    live: "",
+    status: "Completed",
+    featured: true,
+  },
+  {
+    id: 9,
+    title: "Species Identification via Deep Neural Networks",
+    description:
+      "A 3-layer ANN built with TensorFlow/Keras that achieves 100% test accuracy on botanical species classification.",
+    longDescription:
+      "Traditional classification models often struggle with complex, non-linear relationships in biological data. Designed and trained a 3-layer Artificial Neural Network (ANN) using TensorFlow/Keras. The architecture features a Dense input layer, hidden layers with ReLU activation to manage gradient flow, and a Softmax output layer for multi-class probability scoring. Achieved 100% test accuracy using the Adam Optimizer — demonstrating the power of Deep Learning in automated botanical species identification.",
+    tags: ["Python", "TensorFlow", "Keras", "NumPy", "Deep Learning"],
+    category: "AI / ML",
+    github: "https://github.com/peachy-naomi/Deep-Learning-Iris-Classification",
+    live: "",
+    status: "Completed",
+    featured: true,
+  },
+  {
+    id: 10,
     title: "NumPy & Data Processing",
     description:
       "Hands-on Python project exploring NumPy for numerical computation and array-based data processing.",
@@ -117,21 +159,6 @@ const projects: Project[] = [
     status: "In Progress",
     featured: false,
   },
-  {
-    id: 8,
-    title: "AI / ML Project",
-    description:
-      "A machine learning project to be built as part of the AI Engineering curriculum — coming before July.",
-    longDescription:
-      "Currently progressing through the AI Engineering curriculum. After completing NumPy and the remaining Python data stack, this project will cover model building, training, and evaluation using real datasets.",
-    tags: ["Python", "Machine Learning", "AI", "NumPy"],
-    category: "AI / ML",
-    github: "",
-    live: "",
-    status: "Coming Soon",
-    featured: false,
-  },
-  
 ];
 
 const categories = ["All", "Frontend", "Backend", "Python / Data", "AI / ML"];
@@ -172,7 +199,7 @@ export default function Projects() {
           </h1>
           <p className="mt-4 text-[var(--portfolio-text-muted)] max-w-xl text-base leading-relaxed">
             Projects I've built across my journey — from frontend web development
-            and backend APIs to Python data analysis, with AI/ML on the horizon.
+            and backend APIs to Python data analysis and machine learning.
           </p>
 
           {/* Journey progress bar */}
@@ -187,15 +214,17 @@ export default function Projects() {
                 { label: "Next.js", done: true },
                 { label: "MySQL", done: true },
                 { label: "PostgreSQL", done: true },
-                { label: "Superbase", done: true },
+                { label: "Supabase", done: true },
                 { label: "Express.js", done: true },
                 { label: "shadcn/ui", done: true },
                 { label: "Docker", done: true },
                 { label: "System Design", done: true },
                 { label: "Python", done: true },
                 { label: "Pandas", done: true },
-                { label: "NumPy", done: false },
-                { label: "AI / ML", done: false },
+                { label: "NumPy", done: true },
+                { label: "Scikit-Learn", done: true },
+                { label: "TensorFlow", done: true },
+                { label: "Deep Learning", done: true },
               ].map((step, i) => (
                 <span
                   key={i}

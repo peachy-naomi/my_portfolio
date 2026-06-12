@@ -1,5 +1,5 @@
 import Nav from "@/app/components/sidebar";
-import { frontendSkills, backendSkills, pythonSkills, toolSkills } from "@/app/data/devskills";
+import { frontendSkills, backendSkills, pythonSkills, toolSkills, aiSkills } from "@/app/data/devskills";
 import CarouselSize from "@/app/components/carousel";
 
 export default function Skills() {
@@ -17,7 +17,7 @@ export default function Skills() {
           </h1>
           <p className="mt-4 text-[var(--portfolio-text-muted)] max-w-xl text-base leading-relaxed">
             A breakdown of the technologies, tools and frameworks I work with
-            across AI, frontend, and backend development.
+            across AI, machine learning, frontend, and backend development.
           </p>
         </div>
 
@@ -46,6 +46,15 @@ export default function Skills() {
             Python & Data
           </h2>
           <CarouselSize skills={pythonSkills} />
+        </section>
+
+        {/* AI & Machine Learning Section */}
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-[var(--portfolio-text)] mb-6 flex items-center gap-2">
+            <span className="w-2 h-2 rounded-full bg-[var(--portfolio-primary-purple)] inline-block" />
+            AI & Machine Learning
+          </h2>
+          <CarouselSize skills={aiSkills} />
         </section>
 
         {/* Tools Section */}
