@@ -1,9 +1,15 @@
 import { OpenAI } from 'openai';
 import { NextResponse } from 'next/server';
 
+const apiKey = process.env.GROG_API_KEY;
+if (!apiKey) {
+  console.error("❌ PEACHI DEVLAB ERROR: OpenAI API Key is missing from .env.local");
+}
+
 // Initialize the OpenAI client using your Vercel Environment Variable
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
+  apiKey: process.env.GROG_API_KEY,
+  baseURL: "https://api.groq.com/openai/v1",
 });
 
 export async function POST(req: Request) {
@@ -65,7 +71,7 @@ export async function POST(req: Request) {
 
     // Combine your system instructions with the user's conversation history
     const response = await openai.chat.completions.create({
-      model: "gpt-4o-mini", // Very fast and very cheap
+      model: "llama-3.3-70b-versatile", 
       messages: [systemMessage, ...messages],
     });
 
