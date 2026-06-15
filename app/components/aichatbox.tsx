@@ -50,24 +50,34 @@ export default function AIChatBox() {
 
   return (
     <div className="fixed bottom-6 right-6 z-50 font-sans">
-      {/* Floating Toggle Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 rounded-full bg-[#8A2BE2] text-white shadow-lg hover:scale-110 transition-all flex items-center justify-center text-2xl"
-      >
-        {isOpen ? '✕' : '💬'}
-      </button>
+      <div className="relative flex items-center justify-end group">
+        
+        {/* The Label: Shown on Hover */}
+        {!isOpen && (
+          <div className="mr-3 bg-white text-[#8A2BE2] border border-purple-100 px-4 py-2 rounded-xl shadow-2xl text-sm font-bold whitespace-nowrap 
+            opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 
+            transition-all duration-300 ease-out pointer-events-none shadow-purple-200/50">
+            Chat with an AI assistant
+          </div>
+        )}
 
-      {/* Chat Window */}
+        {/* The Bubble Button */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="w-14 h-14 rounded-full bg-[#8A2BE2] text-white shadow-lg hover:scale-110 active:scale-95 transition-all flex items-center justify-center text-2xl relative z-10"
+        >
+          {isOpen ? '✕' : '💬'}
+        </button>
+      </div>
+
+      {/* Chat Window (Remains the same) */}
       {isOpen && (
         <div className="absolute bottom-20 right-0 w-80 md:w-96 h-[500px] bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-purple-100 animate-in fade-in slide-in-from-bottom-4 duration-300">
-          {/* Header */}
           <div className="bg-[#8A2BE2] p-4 text-white">
             <h3 className="font-bold text-lg">Peachi DevLab Assistant</h3>
             <p className="text-xs opacity-80">AI Research & Software Engineering</p>
           </div>
 
-          {/* Messages Area */}
           <div ref={scrollRef} className="flex-1 p-4 overflow-y-auto space-y-4 bg-slate-50">
             {messages.map((msg, i) => (
               <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
@@ -89,7 +99,6 @@ export default function AIChatBox() {
             )}
           </div>
 
-          {/* Input Area */}
           <form onSubmit={handleSubmit} className="p-4 bg-white border-t flex gap-2">
             <input
               value={input}
