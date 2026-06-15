@@ -159,6 +159,20 @@ const projects: Project[] = [
     status: "In Progress",
     featured: false,
   },
+  {
+  id: 11,
+  title: "ATOE Group Limited — Corporate Digital Ecosystem",
+  description:
+    "A full-scale corporate website for a diversified Nigerian conglomerate unifying multiple subsidiaries under one high-performance umbrella brand.",
+  longDescription:
+    "Developed a 'Holding Company' digital hub for ATOE Group Limited, unifying subsidiaries across Agribusiness, Manufacturing and Real Estate. Features a cinematic full-screen video hero with glassmorphism overlays, a filterable masonry gallery with pagination, floating WhatsApp support system, Formspree multi-department inquiry routing, and Framer Motion blur-fade animations. Built with Next.js 15 App Router, Tailwind CSS v4 and deployed on Vercel with SSG principles for A-Grade performance. The biggest design challenge was creating visual harmony between a Piggery and Luxury Real Estate — solved with a 'Charcoal & Bone' palette and standardized Industrial Badge components.",
+  tags: ["Next.js 15", "Tailwind CSS v4", "Framer Motion", "Formspree", "Vercel"],
+  category: "Frontend",
+  github: "https://github.com/peachy-naomi/ATOE",
+  live: "https://atoegroup.org",
+  status: "Completed",
+  featured: true,
+},
 ];
 
 const categories = ["All", "Frontend", "Backend", "Python / Data", "AI / ML"];
